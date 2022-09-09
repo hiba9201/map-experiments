@@ -1,0 +1,17 @@
+.map {
+    height: 100vh;
+}
+
+.map .leaflet-control-zoom {
+    border: none;
+}
+
+.map .leaflet-control-zoom-in,
+.map .leaflet-control-zoom-out {
+    line-height: 28px !important;
+    border-radius: 50% !important;
+}
+
+.map .leaflet-control-zoom-in {
+    margin-bottom: 10px;
+}

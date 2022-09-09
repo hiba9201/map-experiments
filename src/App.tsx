@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Map } from './components/Map';
+import { Map } from './components/Map/Map';
 
 function App() {
   // let startPoint: [number, number] = [46.837391, 60.598145];
