@@ -13,6 +13,8 @@ import block from 'bem-cn';
 import { SetViewOnClick } from '../MapHelpers/SetViewOnClick';
 import { PolylineDrawer } from '../MapHelpers/PolylineDrawer';
 
+import { DataLayer } from '../DataLayer/DataLayer';
+
 import {
     YekaterinburgCenter,
     getCurrentPositionOptions,
@@ -62,6 +64,13 @@ export const Map = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
 
+
+            {/* <DataLayer idx={3} /> */}
+            <DataLayer idx={2} />
+            <DataLayer idx={1} />
+            <DataLayer idx={5} />
+            <DataLayer idx={4} />
+
             {/* Контролы карты: Зум */}
             <ZoomControl position="topright" />
             <ScaleControl position="topright" />
@@ -70,9 +79,9 @@ export const Map = () => {
             <AttributionControl position='bottomleft' prefix="Map Exps" />
 
             {/* То, что можно размещать на карте: Маркеры, Рисунки */}
-            <Polygon pathOptions={purpleOptions} positions={polygon} />
+            {/* <Polygon pathOptions={purpleOptions} positions={polygon} /> */}
 
-            <PolylineDrawer positions={polylinePath} pathOptions={polylineOptions} />
+            {/* <PolylineDrawer positions={polylinePath} pathOptions={polylineOptions} /> */}
 
             {/* Дополнительные контролы: Плавное перемещение по клику */}
             <SetViewOnClick />
